@@ -16,7 +16,7 @@ struct MainView: View {
         LoginView()
         
     }
-}// this is a test for git
+}// test 2
 
 #Preview {
     MainView()
