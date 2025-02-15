@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D4858192D6100A7007B9A7D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4858182D6100A7007B9A7D /* FirebaseAuth */; };
+		9D48581B2D6100A7007B9A7D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D48581A2D6100A7007B9A7D /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D4857FB2D6042ED007B9A7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4857E22D6042EB007B9A7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D4857E92D6042EB007B9A7D;
+			remoteInfo = workout_planner;
+		};
+		9D4858052D6042ED007B9A7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D4857E22D6042EB007B9A7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D4857E92D6042EB007B9A7D;
+			remoteInfo = workout_planner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D4857EA2D6042EB007B9A7D /* workout_planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workout_planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4857FA2D6042ED007B9A7D /* workout_plannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workout_plannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4858042D6042ED007B9A7D /* workout_plannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = workout_plannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9D4857EC2D6042EB007B9A7D /* workout_planner */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = workout_planner;
+			sourceTree = "<group>";
+		};
+		9D4857FD2D6042ED007B9A7D /* workout_plannerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = workout_plannerTests;
+			sourceTree = "<group>";
+		};
+		9D4858072D6042ED007B9A7D /* workout_plannerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = workout_plannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D4857E72D6042EB007B9A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4858192D6100A7007B9A7D /* FirebaseAuth in Frameworks */,
+				9D48581B2D6100A7007B9A7D /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4857F72D6042ED007B9A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4858012D6042ED007B9A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D4857E12D6042EB007B9A7D = {
+			isa = PBXGroup;
+			children = (
+				9D4857EC2D6042EB007B9A7D /* workout_planner */,
+				9D4857FD2D6042ED007B9A7D /* workout_plannerTests */,
+				9D4858072D6042ED007B9A7D /* workout_plannerUITests */,
+				9D4857EB2D6042EB007B9A7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D4857EB2D6042EB007B9A7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D4857EA2D6042EB007B9A7D /* workout_planner.app */,
+				9D4857FA2D6042ED007B9A7D /* workout_plannerTests.xctest */,
+				9D4858042D6042ED007B9A7D /* workout_plannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D4857E92D6042EB007B9A7D /* workout_planner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D48580E2D6042ED007B9A7D /* Build configuration list for PBXNativeTarget "workout_planner" */;
+			buildPhases = (
+				9D4857E62D6042EB007B9A7D /* Sources */,
+				9D4857E72D6042EB007B9A7D /* Frameworks */,
+				9D4857E82D6042EB007B9A7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9D4857EC2D6042EB007B9A7D /* workout_planner */,
+			);
+			name = workout_planner;
+			packageProductDependencies = (
+				9D4858182D6100A7007B9A7D /* FirebaseAuth */,
+				9D48581A2D6100A7007B9A7D /* FirebaseFirestore */,
+			);
+			productName = workout_planner;
+			productReference = 9D4857EA2D6042EB007B9A7D /* workout_planner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D4857F92D6042ED007B9A7D /* workout_plannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4858112D6042ED007B9A7D /* Build configuration list for PBXNativeTarget "workout_plannerTests" */;
+			buildPhases = (
+				9D4857F62D6042ED007B9A7D /* Sources */,
+				9D4857F72D6042ED007B9A7D /* Frameworks */,
+				9D4857F82D6042ED007B9A7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D4857FC2D6042ED007B9A7D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D4857FD2D6042ED007B9A7D /* workout_plannerTests */,
+			);
+			name = workout_plannerTests;
+			packageProductDependencies = (
+			);
+			productName = workout_plannerTests;
+			productReference = 9D4857FA2D6042ED007B9A7D /* workout_plannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D4858032D6042ED007B9A7D /* workout_plannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4858142D6042ED007B9A7D /* Build configuration list for PBXNativeTarget "workout_plannerUITests" */;
+			buildPhases = (
+				9D4858002D6042ED007B9A7D /* Sources */,
+				9D4858012D6042ED007B9A7D /* Frameworks */,
+				9D4858022D6042ED007B9A7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D4858062D6042ED007B9A7D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D4858072D6042ED007B9A7D /* workout_plannerUITests */,
+			);
+			name = workout_plannerUITests;
+			packageProductDependencies = (
+			);
+			productName = workout_plannerUITests;
+			productReference = 9D4858042D6042ED007B9A7D /* workout_plannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D4857E22D6042EB007B9A7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					9D4857E92D6042EB007B9A7D = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					9D4857F92D6042ED007B9A7D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9D4857E92D6042EB007B9A7D;
+					};
+					9D4858032D6042ED007B9A7D = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9D4857E92D6042EB007B9A7D;
+					};
+				};
+			};
+			buildConfigurationList = 9D4857E52D6042EB007B9A7D /* Build configuration list for PBXProject "workout_planner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D4857E12D6042EB007B9A7D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9D4858172D6100A7007B9A7D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9D4857EB2D6042EB007B9A7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D4857E92D6042EB007B9A7D /* workout_planner */,
+				9D4857F92D6042ED007B9A7D /* workout_plannerTests */,
+				9D4858032D6042ED007B9A7D /* workout_plannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D4857E82D6042EB007B9A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4857F82D6042ED007B9A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4858022D6042ED007B9A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D4857E62D6042EB007B9A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4857F62D6042ED007B9A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4858002D6042ED007B9A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D4857FC2D6042ED007B9A7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D4857E92D6042EB007B9A7D /* workout_planner */;
+			targetProxy = 9D4857FB2D6042ED007B9A7D /* PBXContainerItemProxy */;
+		};
+		9D4858062D6042ED007B9A7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D4857E92D6042EB007B9A7D /* workout_planner */;
+			targetProxy = 9D4858052D6042ED007B9A7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D48580C2D6042ED007B9A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D48580D2D6042ED007B9A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D48580F2D6042ED007B9A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"workout_planner/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Workout Planner";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ericzoo.workout-planner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D4858102D6042ED007B9A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"workout_planner/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Workout Planner";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ericzoo.workout-planner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D4858122D6042ED007B9A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ericzoo.workout-plannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/workout_planner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/workout_planner";
+			};
+			name = Debug;
+		};
+		9D4858132D6042ED007B9A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ericzoo.workout-plannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/workout_planner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/workout_planner";
+			};
+			name = Release;
+		};
+		9D4858152D6042ED007B9A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ericzoo.workout-plannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = workout_planner;
+			};
+			name = Debug;
+		};
+		9D4858162D6042ED007B9A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ericzoo.workout-plannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = workout_planner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D4857E52D6042EB007B9A7D /* Build configuration list for PBXProject "workout_planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D48580C2D6042ED007B9A7D /* Debug */,
+				9D48580D2D6042ED007B9A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D48580E2D6042ED007B9A7D /* Build configuration list for PBXNativeTarget "workout_planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D48580F2D6042ED007B9A7D /* Debug */,
+				9D4858102D6042ED007B9A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4858112D6042ED007B9A7D /* Build configuration list for PBXNativeTarget "workout_plannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4858122D6042ED007B9A7D /* Debug */,
+				9D4858132D6042ED007B9A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4858142D6042ED007B9A7D /* Build configuration list for PBXNativeTarget "workout_plannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4858152D6042ED007B9A7D /* Debug */,
+				9D4858162D6042ED007B9A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D4858172D6100A7007B9A7D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D4858182D6100A7007B9A7D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D4858172D6100A7007B9A7D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9D48581A2D6100A7007B9A7D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D4858172D6100A7007B9A7D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9D4857E22D6042EB007B9A7D /* Project object */;
+}
