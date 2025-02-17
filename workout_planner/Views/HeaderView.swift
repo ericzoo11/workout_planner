@@ -7,31 +7,37 @@
 
 import SwiftUI
 
-struct LoginPageHeaderView: View {
+struct HeaderView: View {
+    
+    let title: String
+    let subtitle: String
+    let angle: Double
+    let background_color: Color
+    
     var body: some View {
         
         ZStack {
             RoundedRectangle(cornerRadius: 0)
-                .foregroundColor(Color.pink)
-                //.rotationEffect(Angle(degrees:10))
+                .foregroundColor(background_color)
+                .rotationEffect(Angle(degrees:angle))
             VStack{
-                Text("Workout Planner")
+                Text(title)
                     .font(.system(size:45))
                     .foregroundColor(Color.white)
                     .bold()
-                Text("Let's get fit")
+                Text(subtitle)
                     .font(.system(size:30))
                     .foregroundColor(Color.white)
             }
             //.offset(y:30)
-            .padding(.top, 30)
+            .padding(.top, 80)
         }
         .frame(width: UIScreen.main.bounds.width * 3,
                height: 300)
-        .offset(y:-100)
+        .offset(y:-120)
     }
 }
 
 #Preview {
-    LoginPageHeaderView()
+   HeaderView(title: "Title", subtitle: "Subtitle", angle: 20, background_color: Color.pink)
 }

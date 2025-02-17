@@ -17,35 +17,29 @@ struct LoginView: View {
             
             VStack {
                 //Header
-                LoginPageHeaderView()
+                HeaderView(title: "Workout Planner", subtitle:
+                                        "Let's get fit", angle: 15, background_color: .mint)
                 
                 //Login Form
                 Form {
                     TextField("Email Address", text: $email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
                     SecureField("password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
                     
-                    Button{
-                        // Attempt log in
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color.blue)
-                            
-                            Text("Log In")
-                                .foregroundColor(Color.white)
-                                .bold()
-                        }
+                    WPButton(title: "Log In", backgroundColor: .blue){
+                        // Attempt login
                     }
+                    .padding()
                 }
                 //Create Account
                 VStack{
                     Text("Need an account?")
                     NavigationLink("Create an Account", destination: RegisterView())
                 }
-                //.padding(.bottom, 50)
-                
                 Spacer()
             }
         }

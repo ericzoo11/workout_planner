@@ -16,7 +16,7 @@ struct MainView: View {
         LoginView()
         
     }
-}// test 2
+}
 
 #Preview {
     MainView()
