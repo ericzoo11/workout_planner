@@ -9,11 +9,6 @@ import SwiftUI
     
 struct RegisterView: View {
     
-    @State var firstname = ""
-    @State var lastname = ""
-    @State var email = ""
-    @State var password = ""
-    
     var body: some View {
         
         VStack{
