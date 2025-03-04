@@ -9,6 +9,8 @@ import SwiftUI
     
 struct RegisterView: View {
     
+    @StateObject var viewModel = RegisterViewViewModel()
+    
     var body: some View {
         
         VStack{
@@ -18,17 +20,17 @@ struct RegisterView: View {
                 .offset(y: -20)
             
             Form{
-                TextField("First Name", text: $firstname)
+                TextField("First Name", text: $viewModel.firstname)
                     .autocorrectionDisabled(true)
                 
-                TextField("Last Name", text: $lastname)
+                TextField("Last Name", text: $viewModel.lastname)
                     .autocorrectionDisabled(true)
                 
-                TextField("email", text: $email)
+                TextField("email", text: $viewModel.email)
                     .autocorrectionDisabled(true)
                     .autocapitalization(.none)
                 
-                SecureField("password", text: $password)
+                SecureField("password", text: $viewModel.password)
                     .autocorrectionDisabled(true)
                     .autocapitalization(.none)
                 
@@ -37,6 +39,8 @@ struct RegisterView: View {
                     backgroundColor: .green)
                 {
                     //Action when button is pressed
+                    
+                    viewModel.register()
                     
                 }
                 .padding()

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9D4858192D6100A7007B9A7D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4858182D6100A7007B9A7D /* FirebaseAuth */; };
 		9D48581B2D6100A7007B9A7D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D48581A2D6100A7007B9A7D /* FirebaseFirestore */; };
+		9DFE9B9C2D755D9400AF54F3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9DFE9B9B2D755D9400AF54F3 /* FirebaseAuth */; };
+		9DFE9B9E2D755D9400AF54F3 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9DFE9B9D2D755D9400AF54F3 /* FirebaseAuthCombine-Community */; };
+		9DFE9BA02D755D9400AF54F3 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9DFE9B9F2D755D9400AF54F3 /* FirebaseCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D4858192D6100A7007B9A7D /* FirebaseAuth in Frameworks */,
+				9DFE9B9E2D755D9400AF54F3 /* FirebaseAuthCombine-Community in Frameworks */,
+				9DFE9BA02D755D9400AF54F3 /* FirebaseCore in Frameworks */,
 				9D48581B2D6100A7007B9A7D /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFE9B9C2D755D9400AF54F3 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +127,8 @@
 			packageProductDependencies = (
 				9D4858182D6100A7007B9A7D /* FirebaseAuth */,
 				9D48581A2D6100A7007B9A7D /* FirebaseFirestore */,
+				9DFE9B9D2D755D9400AF54F3 /* FirebaseAuthCombine-Community */,
+				9DFE9B9F2D755D9400AF54F3 /* FirebaseCore */,
 			);
 			productName = workout_planner;
 			productReference = 9D4857EA2D6042EB007B9A7D /* workout_planner.app */;
@@ -144,6 +152,7 @@
 			);
 			name = workout_plannerTests;
 			packageProductDependencies = (
+				9DFE9B9B2D755D9400AF54F3 /* FirebaseAuth */,
 			);
 			productName = workout_plannerTests;
 			productReference = 9D4857FA2D6042ED007B9A7D /* workout_plannerTests.xctest */;
@@ -586,6 +595,18 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D4858172D6100A7007B9A7D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		9DFE9B9B2D755D9400AF54F3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAuth;
+		};
+		9DFE9B9D2D755D9400AF54F3 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		9DFE9B9F2D755D9400AF54F3 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

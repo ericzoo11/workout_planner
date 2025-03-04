@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var email = ""
-    @State var password = ""
+    
+    @StateObject var viewModel = MainViewViewModel()
     
     var body: some View {
         
-        LoginView()
-        
+        //if user is signed in, show the workout view
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            TabView{
+                WorkoutView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                ProfileView()
+                    .tabItem{
+                        Label("Profile", systemImage: "person")
+                    }
+            }
+        } else {
+            LoginView()
+        }
     }
 }
 

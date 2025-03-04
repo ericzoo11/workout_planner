@@ -5,6 +5,7 @@
 //  Created by Eric Zhu on 2025-02-15.
 //
 
+import FirebaseFirestore
 import FirebaseAuth
 import Foundation
 
@@ -37,7 +38,17 @@ class RegisterViewViewModel: ObservableObject {
                            lastname: lastname,
                            email: email,
                            joined: Date().timeIntervalSince1970)
+        
+        // insert into database
+        let db = Firestore.firestore()
+        
+        db.collection("users")
+            .document(id)
+            .setData(newUser.asDictionary())
+        
     }
+    
+
     
     private func validate() -> Bool{
         

@@ -17,7 +17,7 @@ struct LoginView: View {
             VStack {
                 //Header
                 HeaderView(title: "Workout Planner", subtitle:
-                                        "Let's get fit", angle: 15, background_color: .mint)
+                                        "Let's get fit", angle: 15, background_color: .pink)
                 //Login Form
                 Form {
                     if !viewModel.errorMessage.isEmpty {
