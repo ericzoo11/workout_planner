@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct WorkoutView: View {
+    
+    @StateObject var viewModel = WorkoutViewViewModel()
+    
+    private let userId: String
+    
+    /// pass something through to the WorkoutViewViewModel Item
+    init(userId: String) {
+        self.userId = userId
+    }
+    
     var body: some View {
         NavigationView{
             VStack{
@@ -26,5 +36,6 @@ struct WorkoutView: View {
 }
 
 #Preview {
-    WorkoutView()
+    // also passing in the userId to the preview as we had to pass in the parameter above
+    WorkoutView(userId: "")
 }

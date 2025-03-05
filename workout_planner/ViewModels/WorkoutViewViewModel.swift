@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+/// ViewModel for a single workout list of items view (each row in item list)
+/// Primary tab
+class WorkoutViewViewModel: ObservableObject {
+    init() {}
+}
