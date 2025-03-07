@@ -39,7 +39,6 @@ struct RegisterView: View {
                     backgroundColor: .green)
                 {
                     //Action when button is pressed
-                    
                     viewModel.register()
                     
                 }

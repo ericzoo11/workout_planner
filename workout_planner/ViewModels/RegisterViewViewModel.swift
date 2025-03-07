@@ -48,8 +48,6 @@ class RegisterViewViewModel: ObservableObject {
         
     }
     
-
-    
     private func validate() -> Bool{
         
         //check that all the fields are not empty and that the email is good

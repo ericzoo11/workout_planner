@@ -27,9 +27,13 @@ struct WorkoutView: View {
             .toolbar {
                 Button {
                     // Action
+                    viewModel.showingNewItemView = true
                 } label: {
                     Image(systemName: "plus")
                 }
+            }
+            .sheet(isPresented: $viewModel.showingNewItemView) {
+                NewItemView()
             }
         }
     }
