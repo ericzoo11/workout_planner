@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct ExerciseItem: Codable, Identifiable {
+    let id: String
+    let title: String
+    let dueDate: TimeInterval
+    let createdDate: TimeInterval
+    var isDone: Bool // this is a var because we want it to be mutatable
+    
+    //mutating function
+    mutating func setDone(_ state: Bool) {
+        isDone = state
+    }
+}

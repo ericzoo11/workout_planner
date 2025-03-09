@@ -10,12 +10,14 @@ import SwiftUI
 struct NewItemView: View {
     
     @StateObject var viewModel = NewItemViewViewModel()
+    @Binding var newItemPresented: Bool
     
     var body: some View {
         VStack  {
             Text ("New Item")
                 .font(.system(size:32))
                 .bold()
+                .padding(.top, 50)
             Form {
                 //Exercise Name (Title)
                 TextField("Title", text: $viewModel.title)
@@ -27,16 +29,27 @@ struct NewItemView: View {
             
                 //Button
                 WPButton(title: "Save",
-                         backgroundColor: .pink){
-                    viewModel.save()
-                    
+                         backgroundColor: .pink
+                ){
+                    if viewModel.canSave {
+                        viewModel.save()
+                        newItemPresented = false
+                    } else {
+                        viewModel.showAlert = true //show an alert if not saved properly
+                    }
                 }
-                         .padding()
+                .padding()
+            }
+            .alert(isPresented: $viewModel.showAlert) {
+                Alert (title: Text("Error"), message: Text("Please fill in all fields and select due date that is today or later"))
             }
         }
     }
 }
 
 #Preview {
-    NewItemView()
+    NewItemView(newItemPresented: Binding(get: {
+        return true
+    }, set: { _ in
+    }))
 }
