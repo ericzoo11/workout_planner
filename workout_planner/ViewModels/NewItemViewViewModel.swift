@@ -43,7 +43,7 @@ class NewItemViewViewModel: ObservableObject {
         //save the model to the database
         db.collection("users")
             .document(uId)
-            .collection("todos")
+            .collection("exercise_item")
             .document(newId) // new model id
             .setData(newItem.asDictionary()) // the [:] means a dictionary
         

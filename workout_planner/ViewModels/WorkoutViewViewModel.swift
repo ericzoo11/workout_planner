@@ -14,4 +14,9 @@ class WorkoutViewViewModel: ObservableObject {
     @Published var showingNewItemView = false
     
     init() {}
+    
+    // delete the item on the list
+    func delete(id: String){
+        
+    }
 }
