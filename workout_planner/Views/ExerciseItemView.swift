@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ExerciseItemView: View {
     
-    @StateObject var viewModel = ProfileViewViewModel()
+    @StateObject var viewModel = ExerciseItemViewViewModel()
     
     let item: ExerciseItem
     
@@ -31,7 +31,9 @@ struct ExerciseItemView: View {
                 // button is pressed, toggle the checkmark
                 viewModel.toggleIsDone(item: item)
             } label: {
-                Image(systemName:item.isDone ? "checkmark.circle.fill" : "circle")
+                Image(systemName:item.isDone ?
+                      "checkmark.circle.fill" : "circle")
+                .foregroundColor(Color.blue)
             }
         }
     }

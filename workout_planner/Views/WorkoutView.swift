@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WorkoutView: View {
     
-    @StateObject var viewModel = WorkoutViewViewModel()
+    @StateObject var viewModel: WorkoutViewViewModel
     @FirestoreQuery var items: [ExerciseItem] //a query that will continuously listen for items
     
     /// pass something through to the WorkoutViewViewModel Item
@@ -18,6 +18,11 @@ struct WorkoutView: View {
         
         //users/<id>/todos/<entries>
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/exercise_item") // this goes to firebase and in the path, it pulls the data into the "items" variable
+        
+        //assign the view model so that we can pass in the userId
+        self._viewModel = StateObject(
+            wrappedValue: WorkoutViewViewModel(userId: userId)
+        )
     }
     
     var body: some View {
@@ -26,11 +31,9 @@ struct WorkoutView: View {
                 List(items) { item in
                     ExerciseItemView(item: item)
                         .swipeActions { //swipe action modifier
-                            Button{
+                            Button("Delete"){
                                 //Delete the item
                                 viewModel.delete(id: item.id)
-                            } label: {
-                                Text("delete")
                             }.tint(Color.red)
                         }
                 }

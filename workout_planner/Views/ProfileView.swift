@@ -15,6 +15,41 @@ struct ProfileView: View {
         NavigationView{
             VStack{
                 
+                //Avatar
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .frame(width: 125, height: 125)
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
+                
+                //Info: Name, Email, member since...
+                VStack(alignment: .leading){
+                    HStack{
+                        Text("Name:")
+                            .bold()
+                        Text("Eric Zhu")
+                    }
+                    HStack{
+                        Text("Email:")
+                            .bold()
+                        Text("Eric Zhu")
+                    }
+                    HStack{
+                        Text("Member Since:")
+                            .bold()
+                        Text("Eric Zhu")
+                    }
+                    
+                    Button("Log Out"){
+                        //action when pressing the button
+                        viewModel.logOut()
+                    }
+                    .tint(.red)
+                    .padding()
+                    
+                    Spacer()
+                }
+                
             }
             .navigationTitle("Profile")
         }
